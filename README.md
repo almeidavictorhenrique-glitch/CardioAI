@@ -65,16 +65,16 @@ O repositório visual é composto por **1.684 imagens** médicas relativas a exa
 
 ### Aplicação de Visão Computacional na Saúde
 
-* **Classificação de Padrões Isquêmicos e Estruturais:** Utilização de Redes Neurais Convolucionais (CNNs) para automatizar a diferenciação entre exames saudáveis e patológicos, identificando cardiomegalia em Raio-X de Tórax[cite: 4] e desvios de segmento ST ou arritmias em ECGs[cite: 4, 5].
-* **Segmentação Anatômica:** Delimitação da silhueta cardíaca e grandes vasos para cálculo automatizado do índice cardiotorácico[cite: 4].
+* **Classificação de Padrões Isquêmicos e Estruturais:** Utilização de Redes Neurais Convolucionais (CNNs) para automatizar a diferenciação entre exames saudáveis e patológicos, identificando cardiomegalia em Raio-X de Tórax e desvios de segmento ST ou arritmias em ECGs.
+* **Segmentação Anatômica:** Delimitação da silhueta cardíaca e grandes vasos para cálculo automatizado do índice cardiotorácico.
 * **Triagem Pré-Diagnóstica Hospitalar:** O equilíbrio do dataset permite treinar classificadores binários confiáveis para sinalizar exames alterados e priorizá-los automaticamente na fila do especialista.
 
 ---
 
 ## ⚖️ Considerações sobre Governança, Equidade e Viés nos Dados
 
-Com base na literatura técnica e epidemiológica analisada[cite: 4, 5]:
+Com base na literatura técnica e epidemiológica analisada:
 
-1. **Equidade Socioeconômica e Regional:** Estudos mostram disparidades no cuidado prestado a pacientes com hipertensão e disfunções cardíacas no Brasil (com menor oferta de exames e orientações nas regiões Norte/Nordeste e em classes econômicas mais baixas)[cite: 5]. O modelo preditivo deve ser treinado prevenindo a amplificação dessas iniquidades socioeconômicas[cite: 5].
-2. **Mitigação de Viés Demográfico:** Inclusão e calibração equilibrada de dados por idade e sexo[cite: 5], considerando que a manifestação da doença e prognósticos variam fortemente com o envelhecimento e a gravidade da disfunção ventricular[cite: 4].
-3. **Privacidade e LGPD:** Todos os dados clínicos, textuais e de imagem passaram por protocolos de anonimização completa, garantindo o total respeito às diretrizes éticas e legais vigentes[cite: 5].
+1. **Equidade Socioeconômica e Regional:** Estudos mostram disparidades no cuidado prestado a pacientes com hipertensão e disfunções cardíacas no Brasil (com menor oferta de exames e orientações nas regiões Norte/Nordeste e em classes econômicas mais baixas). O modelo preditivo deve ser treinado prevenindo a amplificação dessas iniquidades socioeconômicas.
+2. **Mitigação de Viés Demográfico:** Inclusão e calibração equilibrada de dados por idade e sexo, considerando que a manifestação da doença e prognósticos variam fortemente com o envelhecimento e a gravidade da disfunção ventricular.
+3. **Privacidade e LGPD:** Todos os dados clínicos, textuais e de imagem passaram por protocolos de anonimização completa, garantindo o total respeito às diretrizes éticas e legais vigentes.
