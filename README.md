@@ -40,16 +40,16 @@ O conjunto de dados numéricos e de sensoriamento clínico contém **303 registr
 
 ## 📝 Parte 2 – Dados Textuais (NLP)
 
-Os arquivos em texto bruto para treinamento e extração em linguagem natural encontram-se disponíveis no diretório `/assets/`:
+Os arquivos em texto bruto para treinamento e extração em linguagem natural encontram-se disponíveis em : https://drive.google.com/drive/folders/1TQCcfs491hN-YBmndVq4uAwhV0fbjWl9?usp=sharing
 
-* [`/assets/texto_scielo_1.txt`](./assets/texto_scielo_1.txt) — *Revisão Fisiopatológica e Manejo Clínico/Cirúrgico da Insuficiência Cardíaca (InCor / USP)*[cite: 4]
-* [`/assets/artigo_sus_2.txt`](./assets/artigo_sus_2.txt) — *Análise da Adequação do Cuidado à Hipertensão Arterial no SUS e Rede Privada (PNS 2013–2019)*[cite: 5]
+*Revisão Fisiopatológica e Manejo Clínico/Cirúrgico da Insuficiência Cardíaca (InCor / USP)*
+*Análise da Adequação do Cuidado à Hipertensão Arterial no SUS e Rede Privada (PNS 2013–2019)*
 
 ### Exploração por Algoritmos de Processamento de Linguagem Natural (NLP)
 
-* **Reconhecimento e Extração de Entidades Nomeadas (NER):** Mapeamento automático de termos da literatura e prontuários médicos (ex: *fração de ejeção, dispneia, remodelamento ventricular, inibidores da ECA, digital, diuréticos*) para alimentar bases do conhecimento cardiológico[cite: 4].
-* **Sistemas de Apoio à Decisão e Sumarização Clínica:** Mineração de artigos científicos e diretrizes do SUS para automatizar recomendações de acompanhamento e suporte à prescrição clínica[cite: 4, 5].
-* **Análise de Sentimentos e Sintomatologia:** Processamento de relatos de pacientes sobre sintomas subjetivos e impacto na qualidade de vida (como fadiga e limitação funcional de classes New York Heart Association)[cite: 4].
+* **Reconhecimento e Extração de Entidades Nomeadas (NER):** Mapeamento automático de termos da literatura e prontuários médicos (ex: *fração de ejeção, dispneia, remodelamento ventricular, inibidores da ECA, digital, diuréticos*) para alimentar bases do conhecimento cardiológico.
+* **Sistemas de Apoio à Decisão e Sumarização Clínica:** Mineração de artigos científicos e diretrizes do SUS para automatizar recomendações de acompanhamento e suporte à prescrição clínica.
+* **Análise de Sentimentos e Sintomatologia:** Processamento de relatos de pacientes sobre sintomas subjetivos e impacto na qualidade de vida (como fadiga e limitação funcional de classes New York Heart Association).
 
 ---
 
