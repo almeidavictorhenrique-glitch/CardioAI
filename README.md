@@ -63,6 +63,7 @@ Essa abordagem permite futuramente utilizar técnicas de **Visão Computacional*
 
 O projeto também considera a importância da utilização responsável de dados em Inteligência Artificial.
 
+<<<<<<< HEAD
 Em aplicações relacionadas à saúde, fatores como **qualidade dos dados, representatividade, privacidade, viés e equidade** são fundamentais para evitar resultados inadequados e garantir que os modelos sejam utilizados de maneira responsável.
 
 ---
@@ -264,3 +265,72 @@ O projeto passou pela identificação de sintomas em frases, associação com um
 O resultado de **75% de acurácia** e os testes com frases ambíguas também demonstraram a importância de utilizar bases maiores e mais representativas para desenvolver modelos mais robustos.
 
 O CardioIA continua, assim, explorando como diferentes técnicas de Inteligência Artificial podem ser aplicadas ao contexto da saúde de forma responsável e educacional.
+=======
+1. **Equidade Socioeconômica e Regional:** Estudos mostram disparidades no cuidado prestado a pacientes com hipertensão e disfunções cardíacas no Brasil (com menor oferta de exames e orientações nas regiões Norte/Nordeste e em classes econômicas mais baixas). O modelo preditivo deve ser treinado prevenindo a amplificação dessas iniquidades socioeconômicas.
+2. **Mitigação de Viés Demográfico:** Inclusão e calibração equilibrada de dados por idade e sexo, considerando que a manifestação da doença e prognósticos variam fortemente com o envelhecimento e a gravidade da disfunção ventricular.
+3. **Privacidade e LGPD:** Todos os dados clínicos, textuais e de imagem passaram por protocolos de anonimização completa, garantindo o total respeito às diretrizes éticas e legais vigentes.
+
+## Evolução experimental da Fase 2 — Análise textual e modelagem
+
+Após a entrega original da Fase 2, foi realizada uma evolução experimental do projeto CardioIA, ampliando a base textual e aprofundando a análise dos modelos de classificação de risco.
+
+### 1. Atualização do dataset
+
+O conjunto de dados foi ampliado e revisado para melhorar a consistência dos experimentos.
+
+- **Total de registros:** 514 frases.
+- **Alto risco:** 257 frases.
+- **Baixo risco:** 257 frases.
+- **Origem:** dados sintéticos.
+- **Arquivo:** `data/frases_risco_limpo.csv`.
+
+Durante a preparação, foram removidos cabeçalhos repetidos e registros duplicados. Também foram adicionadas frases de baixo risco para equilibrar as classes.
+
+### 2. Análise exploratória e similaridade textual
+
+Foi realizada uma análise exploratória das frases, incluindo a identificação de possíveis duplicidades e similaridades textuais.
+
+Foram identificados 17 pares de frases com similaridade igual ou superior a 0,80. Todos os pares identificados apresentavam a mesma classificação, sem conflitos entre os rótulos.
+
+### 3. Estratégia de divisão dos dados
+
+Para reduzir o risco de frases muito semelhantes aparecerem simultaneamente nos conjuntos de treinamento e teste, foi utilizada uma estratégia de divisão estratificada e agrupada.
+
+- Divisão aproximada: 80% para treinamento e 20% para teste.
+- Treinamento: 411 registros.
+- Teste: 103 registros.
+- Sobreposição de grupos entre treinamento e teste: zero.
+
+Foi utilizada a estratégia `StratifiedGroupKFold`, com cinco divisões, embaralhamento e `random_state=42`.
+
+### 4. Experimentos de modelagem
+
+Foram comparadas duas configurações de representação textual utilizando TF-IDF e Regressão Logística.
+
+| Configuração | Acurácia | Erros |
+|---|---:|---:|
+| Unigramas e bigramas | 99,03% | 1 |
+| Unigramas, bigramas e trigramas | 100% | 0 |
+
+O primeiro modelo apresentou um erro de classificação no conjunto de teste. O segundo modelo não apresentou erros nesse mesmo conjunto.
+
+A inclusão de trigramas permitiu considerar sequências textuais maiores, contribuindo para a classificação das frases avaliadas.
+
+### 5. Interpretação e limitações
+
+Os resultados demonstram que as configurações testadas conseguiram identificar padrões presentes na base sintética utilizada.
+
+Entretanto, é importante considerar as seguintes limitações:
+
+- O dataset é sintético e não representa, necessariamente, a linguagem utilizada por pacientes em situações reais.
+- A acurácia obtida não representa desempenho clínico.
+- O resultado de 100% foi observado em uma única divisão de teste e não garante generalização para novos dados.
+- O conjunto de teste foi consultado durante os experimentos exploratórios, portanto não deve ser considerado uma avaliação final totalmente independente.
+- O TF-IDF representa frequências e combinações de palavras, mas não compreende integralmente o contexto semântico das frases.
+
+### 6. Próximos passos
+
+Como continuidade do projeto, pretende-se avançar para a integração com sensores e monitoramento de dados fisiológicos na Fase 3, mantendo a preocupação com a qualidade dos dados, a confiabilidade dos resultados e as limitações do sistema.
+
+**Observação:** esta seção documenta uma evolução experimental posterior à entrega original da Fase 2, sem substituir ou descaracterizar os entregáveis anteriormente submetidos.
+>>>>>>> c7290a0 (feat: amplia dataset e experimentos de modelagem da fase 2)

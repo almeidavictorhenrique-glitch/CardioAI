@@ -1,1 +1,18 @@
+# Ambiente virtual Python
 .venv/
+venv/
+
+# Dependências Node.js
+node_modules/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Configurações locais e segredos
+.env
+.env.*
+!.env.example
+
+# Saídas temporárias de notebooks
+.ipynb_checkpoints/

@@ -1,0 +1,16 @@
+Sintoma 1,Sintoma 2,Doença Associada
+dor no peito,pressão no peito,Infarto
+dor no peito,aperto no tórax,Infarto
+pressão no peito,desconforto no peito,Infarto
+pressão forte no peito,pressão no peito,Infarto
+cansaço,fadiga,Insuficiência Cardíaca
+cansaço,falta de energia,Insuficiência Cardíaca
+falta de ar,dificuldade para respirar,Angina
+falta de ar,respiração difícil,Angina
+palpitação,palpitações,Arritmia
+palpitação,coração acelerado,Arritmia
+inchaço nas pernas,pernas inchadas,Insuficiência Cardíaca
+tontura,vertigem,Arritmia
+fraqueza,perda de energia,Insuficiência Cardíaca
+dor nas costas,desconforto nas costas,Dor Muscular
+dor leve nas costas,dor nas costas,Dor Muscular

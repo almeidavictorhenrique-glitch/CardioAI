@@ -1,0 +1,8 @@
+﻿frase_1,classe_1,frase_2,classe_2,similaridade
+Percebo algumas batidas mais fortes depois de uma noite mal dormida,baixo risco,Percebo algumas batidas fortes depois de uma noite mal dormida,baixo risco,0.8841
+Às vezes sinto uma batida mais forte no peito depois de tomar café,baixo risco,Às vezes percebo uma batida mais forte no peito depois de tomar café,baixo risco,0.8599
+Minha respiração fica mais profunda depois de uma caminhada longa,baixo risco,Minha respiração fica mais profunda depois de uma caminhada rápida,baixo risco,0.8409
+Meu coração está batendo de forma irregular e estou com muita fraqueza,alto risco,Meu coração está batendo de forma irregular e estou com muita falta de ar,alto risco,0.8403
+Fico um pouco ofegante depois de subir vários lances de escada,baixo risco,Fico um pouco cansado depois de subir vários lances de escada,baixo risco,0.8251
+Às vezes suspiro fundo quando estou cansado,baixo risco,Às vezes suspiro fundo quando estou cansado ou preocupado,baixo risco,0.8169
+Estou com uma dor forte no peito que chega até a mandíbula,alto risco,Sinto uma pressão forte no peito que chega até a mandíbula,alto risco,0.802
