@@ -16,3 +16,19 @@ __pycache__/
 
 # Saídas temporárias de notebooks
 .ipynb_checkpoints/
+
+# PlatformIO
+.pio/
+
+# Arquivos temporários de execução
+cardioai_historico.csv
+dados_pendentes.csv
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Credenciais MQTT
+include/secrets.h
+
+src/dados_cardio_v2.csv
